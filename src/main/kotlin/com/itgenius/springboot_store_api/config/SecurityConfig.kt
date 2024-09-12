@@ -62,6 +62,7 @@ class SecurityConfig(
         config.allowCredentials = true
 
         // Allow specific origins
+        // config.addAllowedOrigin("*")
         config.addAllowedOrigin("http://localhost:8080")
         config.addAllowedOrigin("http://localhost:4200")
         config.addAllowedOrigin("http://localhost:3000")
@@ -69,6 +70,7 @@ class SecurityConfig(
         config.addAllowedOrigin("http://localhost:5173")
         config.addAllowedOrigin("http://localhost:5000")
         config.addAllowedOrigin("http://localhost:5001")
+        config.addAllowedOrigin("https://springapirenderclass.onrender.com")
         config.addAllowedOriginPattern("https://*.itgenius.co.th")
         config.addAllowedOriginPattern("https://*.azurewebsites.net")
         config.addAllowedOriginPattern("https://*.netlify.app")
